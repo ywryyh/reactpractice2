@@ -5,7 +5,7 @@ const SignUp = () => {
 
     const [userId,setUserId]=useState('')
     const [password,setPassword]=useState('')
-    const navigator=useNavigate
+    const navigator=useNavigate()
     
     const onSubmit1 =(e)=>{
         e.preventDefault()

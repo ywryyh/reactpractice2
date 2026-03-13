@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { type } from './../../node_modules/cookie/dist/index.d';
+
 
 const CreateBoard = () => {
     //1.제목상태 초기화

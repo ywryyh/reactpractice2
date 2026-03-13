@@ -5,7 +5,7 @@ import { useAuth } from './AuthContextPro';
 const NaviBar = () => {
 
     const{currentUser,logout}=useAuth()
-    const navigator=useNavigate
+    const navigator=useNavigate()
 
     const logout1=()=>{
         logout()
@@ -18,7 +18,7 @@ const NaviBar = () => {
 
 
     return (
-       <> 
+       <nav className='bg-amber-200 shadow-slate-500'> 
        <Link to="/">홈</Link>
        <Link to="/memberList">회원목록</Link>
        <Link to="/boardList">게시글 목록</Link>
@@ -36,7 +36,7 @@ const NaviBar = () => {
             <button onClick={logout1}>로그아웃</button>
         </>
        )} 
-       </>
+       </nav>
     );
 };
 

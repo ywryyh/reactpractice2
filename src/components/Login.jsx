@@ -7,7 +7,7 @@ const Login = () => {
 
     const [userId,setUserId]=useState('')
     const [password,setPassword]=useState('')
-    const navigator=useNavigate
+    const navigator=useNavigate()
 
     const {setCurrentUser}=useAuth()
 
@@ -39,7 +39,7 @@ const Login = () => {
 
 
 
-    }
+    
     return (
         <div>
             <form onSubmit={onSubmit2}>
@@ -52,5 +52,5 @@ const Login = () => {
         </div>
     );
 
-
+}
 export default Login;
